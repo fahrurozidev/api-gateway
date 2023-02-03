@@ -5,7 +5,7 @@ const { APP_NAME } = process.env;
 const coursesHandler = require("./handler/courses");
 
 const verifyToken = require("../middlewares/verifyToken");
-const can = require("./middlewares/permission");
+const can = require("../middlewares/permission");
 
 router.get("/", coursesHandler.getAll);
 router.get("/:id", coursesHandler.get);
